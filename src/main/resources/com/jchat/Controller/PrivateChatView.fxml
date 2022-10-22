@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="main" prefHeight="439.0" prefWidth="551.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jchat.Controller.PrivateChatController">
+   <children>
+      <HBox prefHeight="439.0" prefWidth="474.0" />
+      <Button fx:id="sendButton" layoutX="474.0" layoutY="365.0" mnemonicParsing="false" onAction="#sendMessage" prefHeight="30.0" prefWidth="106.0" text="send" />
+      <TextArea fx:id="messagetext" layoutY="364.0" onKeyPressed="#sendMethod" prefHeight="75.0" prefWidth="474.0" wrapText="true" />
+      <MenuBar fx:id="menubar" layoutX="1.0" layoutY="-32.0" prefHeight="32.0" prefWidth="579.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="func1">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="func2">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </MenuBar>
+      <Circle fx:id="status" fill="#1fff7d" layoutX="527.0" layoutY="93.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+      <AmbientLight fx:id="light" color="CHARTREUSE" layoutX="360.0" layoutY="439.0" />
+      <Label fx:id="usernamelabel" layoutX="491.0" layoutY="47.0" prefHeight="30.0" prefWidth="88.0" text="nickname" textAlignment="RIGHT" textOverrun="LEADING_WORD_ELLIPSIS" />
+      <VBox prefHeight="368.0" prefWidth="474.0">
+         <children>
+            <ListView fx:id="messageList" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="428.0" prefWidth="474.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

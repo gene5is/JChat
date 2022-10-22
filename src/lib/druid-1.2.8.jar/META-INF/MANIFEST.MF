@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: druid
+Implementation-Version: 1.2.8
+Built-By: wenshao
+Implementation-Build: 2021-10-03 13:24:45
+Implementation-Vendor-Id: com.alibaba
+Created-By: Apache Maven 3.6.3
+Build-Jdk: 1.8.0_221
+Implementation-URL: https://github.com/alibaba/druid
+Implementation-Vendor: Alibaba Group
+

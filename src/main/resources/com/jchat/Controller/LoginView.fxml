@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="441.0" prefWidth="358.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jchat.Controller.LoginController">
+
+    <children>
+        <TextField fx:id="usernameField" layoutX="107.0" layoutY="215.0" prefHeight="30.0" prefWidth="195.0" />
+        <Label fx:id="usernameLabel" layoutX="38.0" layoutY="215.0" prefHeight="30.0" prefWidth="60.0" text="用户名" />
+        <Label fx:id="passwordLabel" layoutX="38.0" layoutY="275.0" prefHeight="30.0" prefWidth="60.0" text="密码" />
+        <Button fx:id="loginButton" layoutX="73.0" layoutY="358.0" mnemonicParsing="false" onAction="#Login" text="登录" />
+        <Button fx:id="registerButton" layoutX="221.0" layoutY="358.0" mnemonicParsing="false" onAction="#Register" text="注册" />
+        <Label fx:id="pleaseLogin" graphicTextGap="5.0" layoutX="107.0" layoutY="45.0" prefHeight="110.0" prefWidth="203.0" text="Please Login">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <PasswordField fx:id="passwordField" layoutX="104.0" layoutY="275.0" prefHeight="30.0" prefWidth="195.0" />
+    </children>
+
+</AnchorPane>

@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="JChat">
+    <output-path>$PROJECT_DIR$/out/artifacts/JChat</output-path>
+    <root id="root">
+      <element id="library" level="project" name="lib" />
+      <element id="library" level="project" name="Maven: com.alibaba:druid:1.2.13" />
+    </root>
+  </artifact>
+</component>

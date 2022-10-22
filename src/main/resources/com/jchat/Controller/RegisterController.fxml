@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="mainPane" prefHeight="427.0" prefWidth="304.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jchat.Controller.RegisterController">
+   <children>
+      <Label fx:id="RegisterField" layoutX="105.0" layoutY="45.0" prefHeight="68.0" prefWidth="179.0" text="Register">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="nicknameLabel" layoutX="34.0" layoutY="164.0" prefHeight="20.0" prefWidth="38.0" text="昵称" />
+      <Label fx:id="usernameLabel" layoutX="25.0" layoutY="209.0" prefHeight="30.0" prefWidth="56.0" text="用户名" />
+      <Label fx:id="passwordLabel" layoutX="34.0" layoutY="266.0" text="密码" />
+      <PasswordField fx:id="passwordField" layoutX="88.0" layoutY="261.0" prefHeight="30.0" prefWidth="165.0" />
+      <TextField fx:id="usernameField" layoutX="88.0" layoutY="209.0" prefHeight="30.0" prefWidth="165.0" />
+      <TextField fx:id="nicknameField" layoutX="88.0" layoutY="159.0" prefHeight="30.0" prefWidth="165.0" />
+      <Button fx:id="registerButton" layoutX="127.0" layoutY="353.0" mnemonicParsing="false" onAction="#Register" text="注册" />
+      <PasswordField fx:id="passwordConfirmField" layoutX="88.0" layoutY="302.0" prefHeight="30.0" prefWidth="165.0" />
+      <Label fx:id="passwordConfirmLabel" layoutX="17.0" layoutY="302.0" prefHeight="30.0" prefWidth="72.0" text="确认密码" />
+   </children>
+</AnchorPane>

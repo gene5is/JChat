@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="mainPane" prefHeight="500.0" prefWidth="240.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jchat.Controller.UserListController">
+   <children>
+      <HBox fx:id="onlineUsersHbox" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="249.0">
+         <children>
+            <Label prefHeight="50.0" prefWidth="124.0" text="Online Users:" textAlignment="CENTER" textFill="#fc6747">
+               <font>
+                  <Font name="SansSerif Regular" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets bottom="10.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label fx:id="onlineCountLabel" prefHeight="48.0" prefWidth="39.0" text="0" textFill="#fc6747">
+               <font>
+                  <Font name="SansSerif Regular" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Label fx:id="myusername" prefHeight="48.0" prefWidth="78.0" text="Label" />
+         </children>
+      </HBox>
+      <ListView fx:id="userList" focusTraversable="false" layoutY="50.0" maxHeight="1.7976931348623157E308" prefHeight="453.0" prefWidth="249.0" style="-fx-border-image-width: 0;" />
+   </children>
+</AnchorPane>
